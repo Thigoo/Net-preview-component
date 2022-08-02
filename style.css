@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--main-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    font-size: 18px;
+    font-family: "Outfit";
+}
+
+main {
+    max-width: 320px;        
+}
+
+.container {
+    background-color: var(--card-BG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.7rem;   
+}
+
+.images {   
+    position: relative; 
+    width: 100%;    
+    cursor: pointer;
+}
+
+.eyeImg {  
+    top: 0;    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.7rem;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;     
+}
+
+.images div:hover {
+    opacity: 1;
+    background-color: hsl(178, 100%, 50%, 60%);
+}
+
+.eyeImg img {        
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img {   
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer; 
+    width: 100%;
+    border-radius: 0.7rem;
+}
+
+.img img {
+    display: block;
+}
+
+section h1 {
+    cursor: pointer;
+    color: var(--White);
+    font-size: 1.2rem;    
+    margin-top: 1rem;
+}
+
+section p {
+    color: var(--Soft-blue);
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.price {        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;      
+    font-weight: 600;    
+}
+
+.priceImg {
+    display: flex;
+    align-items: center;
+}
+
+.priceImg img {
+    width: 12px; 
+    margin-top: 0.8rem;  
+}
+
+.priceImg p{ 
+    font-size: 0.8rem;  
+    margin-left: 0.6rem; 
+    color: var(--Cyan);    
+}
+
+.timeRemaining {
+    display: flex;   
+    align-items: center;        
+}
+
+.timeRemaining p {
+    font-size: 0.8rem;
+}
+
+.timeRemaining img {
+    margin-right: 0.4rem;
+    width: 17px;
+    margin-top: 0.9rem;
+}
+
+hr {
+    margin-top: 1rem;
+    border-color: var(--line);
+}
+
+footer {            
+    display: flex;
+    align-items: center; 
+    justify-content: center;   
+    width: 100%;
+}
+
+.footer {   
+    width: 100%;
+    margin-top: 0.6rem;    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer img {
+    border-radius: 50%;
+    border: 1px solid var(--White);
+    width: 2rem;
+}
+
+.footer p {
+    margin-left: 1rem;
+    color: var(--Soft-blue);
+    font-size: 0.85rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--White);
+} 
+
+h1:hover {
+    color: var(--Cyan);
+}
+
+.footer a:hover {
+    color: var(--Cyan);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--Soft-blue);
+    margin-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 52%, 58%);
+}
+
+.attribution a:hover {
+    color: hsl(228, 70%, 68%);
+}
